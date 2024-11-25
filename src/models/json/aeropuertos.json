@@ -1,0 +1,122 @@
+[
+    {
+        "nombre": "Aeropuerto Internacional Ezeiza",
+        "ciudad": "Buenos Aires",
+        "pais": "Argentina",
+        "categoria": "nacional",
+        "status_port": "active",
+        "idDirector": 1
+    },
+    {
+        "nombre": "Aeropuerto Arturo Merino Benítez",
+        "ciudad": "Santiago",
+        "pais": "Chile",
+        "categoria": "internacional",
+        "status_port": "active",
+        "idDirector": 2
+    },
+    {
+        "nombre": "Aeropuerto Internacional Ministro Pistarini",
+        "ciudad": "Ezeiza",
+        "pais": "Argentina",
+        "categoria": "nacional",
+        "status_port": "active",
+        "idDirector": 1
+    },
+    {
+        "nombre": "Aeropuerto de Barajas",
+        "ciudad": "Madrid",
+        "pais": "España",
+        "categoria": "favorito",
+        "status_port": "active",
+        "idDirector": 3
+    },
+    {
+        "nombre": "Aeropuerto Charles de Gaulle",
+        "ciudad": "París",
+        "pais": "Francia",
+        "categoria": "internacional",
+        "status_port": "inactive",
+        "idDirector": 4
+    },
+    {
+        "nombre": "Aeropuerto de Narita",
+        "ciudad": "Tokio",
+        "pais": "Japón",
+        "categoria": "favorito",
+        "status_port": "active",
+        "idDirector": 5
+    },
+    {
+        "nombre": "Aeropuerto Francisco Gabrielli",
+        "ciudad": "Mendoza",
+        "pais": "Argentina",
+        "categoria": "nacional",
+        "status_port": "inactive",
+        "idDirector": 4
+    },
+    {
+        "nombre": "Aeropuerto de Los Ángeles",
+        "ciudad": "Los Ángeles",
+        "pais": "Estados Unidos",
+        "categoria": "favorito",
+        "status_port": "active",
+        "idDirector": 1
+    },
+    {
+        "nombre": "Aeropuerto Jorge Newbery",
+        "ciudad": "Buenos Aires",
+        "pais": "Argentina",
+        "categoria": "nacional",
+        "status_port": "active",
+        "idDirector": 2
+    },
+    {
+        "nombre": "Aeropuerto de Heathrow",
+        "ciudad": "Londres",
+        "pais": "Reino Unido",
+        "categoria": "internacional",
+        "status_port": "inactive",
+        "idDirector": 2
+    },
+    {
+        "nombre": "Aeropuerto Internacional de Córdoba",
+        "ciudad": "Córdoba",
+        "pais": "Argentina",
+        "categoria": "nacional",
+        "status_port": "active",
+        "idDirector": 3
+    },
+    {
+        "nombre": "Aeropuerto de Frankfurt",
+        "ciudad": "Frankfurt",
+        "pais": "Alemania",
+        "categoria": "internacional",
+        "status_port": "active",
+        "idDirector": 3
+    },
+    {
+        "nombre": "Aeropuerto de Dubái",
+        "ciudad": "Dubái",
+        "pais": "Emiratos Árabes Unidos",
+        "categoria": "internacional",
+        "status_port": "active",
+        "idDirector": 4
+    },
+    {
+        "nombre": "Aeropuerto de Guarulhos",
+        "ciudad": "Sao Paulo",
+        "pais": "Brasil",
+        "categoria": "favorito",
+        "status_port": "active",
+        "idDirector": 5
+    },
+    {
+        "nombre": "Aeropuerto Internacional Cataratas del Iguazú",
+        "ciudad": "Puerto Iguazú",
+        "pais": "Argentina",
+        "categoria": "nacional",
+        "status_port": "active",
+        "idDirector": 5
+    }
+]

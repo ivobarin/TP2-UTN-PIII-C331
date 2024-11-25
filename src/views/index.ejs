@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<%-include("partials/head")%>
+<body>
+    <main>
+        <h2>ACLARACIÓN</h2>
+        <p>Todos los endpoints se pueden probar usando <em>Postman</em> o <em>ThunderClient</em> en los siguiente links.</p>
+        <p><b>Ruta</b> de <b>aeropuertos</b> en el servidor:
+            <a href="/aeropuertos" target="_blank" rel="noopener noreferrer"> enlace</a>
+        </p>
+
+        <p><b>Ruta</b> de <b>directores</b> en el servidor:
+            <a href="/directores" target="_blank" rel="noopener noreferrer"> enlace</a>
+        </p>
+
+        <p> Listado de todos los aeropuertos de la API <b>Airport gap</b>:
+            <a href="/puertos" target="_blank" rel="noopener noreferrer"> enlace</a>
+        </p>
+        <br>
+        <div>
+            <h1>TABLA AEROPUERTOS</h1>
+            <table>
+                <thead>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Ciudad</th>
+                    <th>Pais</th>
+                    <th>ID Director</th>
+                </thead>
+                <tbody>
+                    <% aeropuertos.forEach((puerto)=>{ %>
+                        <tr>
+                            <td>
+                                <%=puerto.id%>
+                            </td>
+                            <td>
+                                <%=puerto.nombre%>
+                            </td>
+                            <td>
+                                <%=puerto.ciudad%>
+                            </td>
+                            <td>
+                                <%=puerto.pais%>
+                            </td>
+                            <td>
+                                <%=puerto.idDirector%>
+                        </tr>
+                        <% })%>
+                </tbody>
+            </table>
+        </div>
+        <br>
+        <br>
+        <div>
+            <h1>TABLA DIRECTORES</h1>
+            <table>
+                <thead>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Email</th>
+                </thead>
+                <tbody>
+                    <% directores.forEach((director)=>{ %>
+                        <tr>
+                            <td>
+                                <%=director.id%>
+                            </td>
+                            <td>
+                                <%=director.nombre%>
+                            </td>
+                            <td>
+                                <%=director.apellido%>
+                            </td>
+                            <td>
+                                <%=director.email%>
+                            </td>
+                        </tr>
+                        <% })%>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+
+</html>
