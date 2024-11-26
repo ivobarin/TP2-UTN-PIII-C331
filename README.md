@@ -22,6 +22,10 @@ La base de datos **MySQL** está organizada en dos modelos principales: **Puerto
    ```
 3. Crea una base de datos en MySQL:
     - Crea una base de datos en MySQL con el nombre `tp2_prog` usando como user y contraseña: `root`.
+    ```sql
+    CREATE DATABASE tp2_prog;
+    USE tp2_prog; 
+    ```
 
 4. Carga los datos iniciales:
    - Crea las tablas en la base de datos con los modelos definidos y ya hardcodeados: 
