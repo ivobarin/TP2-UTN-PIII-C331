@@ -10,6 +10,34 @@ La base de datos **MySQL** está organizada en dos modelos principales: **Puerto
 - Los **aeropuertos** están almacenados en la tabla `Puertos`.
 - Los **directores generales** están almacenados en la tabla `Directores`.
 
+## Ejemplo de Inicio
+1. Clona el repositorio:
+   ```bash
+   git clone <URL_DEL_REPOSITORIO>
+   cd ./src 
+   ```
+2. Instala las dependencias:
+   ```bash
+   npm install
+   ```
+3. Crea una base de datos en MySQL:
+    - Crea una base de datos en MySQL con el nombre `tp2_prog` usando como user y contraseña: `root`.
+
+4. Carga los datos iniciales:
+   - Crea las tablas en la base de datos con los modelos definidos y ya hardcodeados: 
+   ```bash
+   npm run create  
+   ```
+   - O tambien puedes crear las tablas usando el archivo `tablas.sql`, y cargar los datos iniciales con los archivos JSON en la carpeta `models/JSON`.
+
+5. Inicia el servidor:
+   ```bash
+   npm start
+   ```
+
+6. La API estará disponible en `http://localhost:3000`. Puedes acceder al link haciendo `ctrl + click`. 
+
+
 ## Estructura del Proyecto
 **Estructura de Carpetas**
 
@@ -21,37 +49,6 @@ src/<br>
 ├── views/ ─ partials/<br>
 ├── app.js<br>
 └── package.json
-
-### Carpeta Cotrollers: 
-Contiene los controladores para gestionar las operaciones CRUD.
-- **aeropuerto.controller.js**: Controlador para los aeropuertos.
-- **director.controller.js**: Controlador para los directores.
-- **main.controller.js**: Controlador principal.
-- **puertos.controller.js**: Controlador para la API de Airport Gap.
-
-### Carpeta Data:
-Contiene un archivo JS que hace una promesa para cargar los datos de `Airport Gap` y mostrarlos en la ruta `/puertos` como un JSON  .
-
-### Carpeta Models:
-Contiene los modelos de la base de datos.
-- **JSON/**: Archivos JSON de ejemplo para cargar datos iniciales.
-- **modeloTablas.js**: ORM de ambas tablas con Sequilize para poder utilizarlas.
-- **tablas.sql** : Modelo de la base de datos en MySQL.
-- **db.js**: Configuración de la conexión a la base de datos usando Sequilize.
-
-### Carpeta Routes:
-Contiene las rutas de la API.
-- **aeropuertos.routes.js**: Rutas para los aeropuertos.
-- **directores.routes.js**: Rutas para los directores.
-- **main.routes.js**: Rutas principales.
-- **puertos.routes.js**: Rutas para la API de Airport Gap.
-
-### Carpeta Views:
-Contiene las vistas EJS.
-- **partials/**: Partes de las vistas reutilizables (`header` con un style).
-- **index.ejs**: Vista principal.
-- **error.ejs**: Vista de error.
-
 
 ## Estructura de Rutas
 1. **Main**: Contiene las operaciones principales para gestionar los aeropuertos.
@@ -146,34 +143,6 @@ Mas ejemplos disponibles debajo de la lista de aeropuertos en la ruta `/aeropuer
 Se incluyen archivos JSON de ejemplo para cargar datos iniciales en la carpeta `models/JSON`.:
 - **aeropuertos.json**: Información de aeropuertos.
 - **directores.json**: Información de directores.
-
-## Ejemplo de Inicio
-1. Clona el repositorio:
-   ```bash
-   git clone <URL_DEL_REPOSITORIO>
-   cd ./src 
-   ```
-2. Instala las dependencias:
-   ```bash
-   npm install
-   ```
-3. Crea una base de datos en MySQL:
-    - tienes el modelo de la base de datos en la carpeta `models` con el nombre `tablas.sql`
-    - Tambien se puede configurar las variables de entorno en un archivo `.env`:
-   ```env
-   DB_HOST=localhost
-   DB_USER=tu_usuario
-   DB_PASSWORD=tu_contraseña
-   DB_NAME=puertos
-   PORT=3000
-   ```
-
-4. Inicia el servidor:
-   ```bash
-   npm start
-   ```
-
-5. La API estará disponible en `http://localhost:3000`. Puedes acceder al link haciendo `ctrl + click`. 
 
 ## Tecnologías Utilizadas
 - **Node.js** y **Express** para el backend.

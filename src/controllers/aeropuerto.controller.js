@@ -1,4 +1,5 @@
 const { aeropuertoModel } = require("../models/modeloTablas");
+const { getDirectores }  = require("./director.controller");
 
 const getAeropuerto = async (req, res) => {
   try {
@@ -25,7 +26,7 @@ const getAeropuertos = async (req, res) => {
     const { 
       page = 1, 
       limit = 10, // paginado (10 registros por página)
-      sort = "ASC", // ordenamiento (ASC predefinido o DESC)
+      sort = "DESC", // ordenamiento (ASC predefinido o DESC)
       type, // tipo/categoria (favorito/internacional/nacional)
       status, // estado (active/inactive)
       id  // id del director
@@ -49,6 +50,7 @@ const getAeropuertos = async (req, res) => {
 
     if (id) {
       opciones.where.idDirector = id; // Filtrar por id del director
+      
     }
 
     const ejemploParams = {

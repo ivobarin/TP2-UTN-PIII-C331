@@ -1,3 +1,5 @@
+-- tp2_prog es el nombre de la database
+-- Puertos y Directores el nombre de las tablas
 CREATE DATABASE tp2_prog;
 USE tp2_prog; 
 
@@ -25,3 +27,4 @@ nombre VARCHAR(30) NOT NULL,
 apellido VARCHAR(30) NOT NULL, 
 email VARCHAR(40) CONSTRAINT validarMail CHECK(LOCATE("@", email) > 0)
 ); 
+
