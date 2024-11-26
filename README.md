@@ -28,7 +28,7 @@ La base de datos **MySQL** está organizada en dos modelos principales: **Puerto
    ```bash
    npm run create  
    ```
-   - O tambien puedes crear las tablas usando el archivo `tablas.sql`, y cargar los datos iniciales con los archivos JSON en la carpeta `models/JSON`.
+   - O también puedes crear las tablas usando el archivo `tablas.sql`, y cargar los datos iniciales con los archivos JSON en la carpeta `models/JSON`.
 
 5. Inicia el servidor:
    ```bash
@@ -36,7 +36,6 @@ La base de datos **MySQL** está organizada en dos modelos principales: **Puerto
    ```
 
 6. La API estará disponible en `http://localhost:3000`. Puedes acceder al link haciendo `ctrl + click`. 
-
 
 ## Estructura del Proyecto
 **Estructura de Carpetas**
@@ -74,7 +73,6 @@ src/<br>
 ## Vistas EJS
 - **Index**: Vista principal con la informacion de ambas tablas en la base de datos, y los enlaces a las rutas disponibles.
 - **Error**: Vista de error personalizada.
-
 
 ## Requerimientos Específicos
 
